@@ -10,7 +10,8 @@ vim.cmd("set ts=2")
 require("config.lazy")
 
 require("catppuccin").setup()
-vim.cmd.colorscheme "catppuccin"
+vim.o.background = "dark"
+vim.cmd.colorscheme "gruvbox"
 
 local config = require("nvim-treesitter.configs")
 config.setup({
