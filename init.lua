@@ -12,6 +12,7 @@ require("config.lazy")
 require("catppuccin").setup()
 vim.o.background = "dark"
 vim.cmd.colorscheme "gruvbox"
+vim.opt.clipboard:append { "unnamed", "unnamedplus" }
 
 local config = require("nvim-treesitter.configs")
 config.setup({
