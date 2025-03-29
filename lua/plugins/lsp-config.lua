@@ -14,6 +14,10 @@ return {
 			require("mason-lspconfig").setup({
 				luau_lsp = function()
 					require("luau-lsp").setup({
+						plugin = {
+							enabled = true,
+							port = 3667,
+						},
 						platform = {
 							type = "roblox",
 						},
@@ -25,10 +29,6 @@ return {
 							autogenerate = true,
 							rojo_project_file = "default.project.json",
 							sourcemap_file = "sourcemap.json",
-						},
-						plugin = {
-							enabled = true,
-							port = 3667,
 						},
 						server = {
 							settings = {

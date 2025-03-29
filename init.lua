@@ -34,3 +34,5 @@ config.setup({
 })
 
 require("keymaps")
+require("snippets")
+require("custom-commands")
