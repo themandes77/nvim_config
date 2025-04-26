@@ -1,18 +1,15 @@
-vim.cmd("set expandtab")
-vim.cmd("set tabstop=2")
-vim.cmd("set softtabstop=2")
-vim.cmd("set shiftwidth=2")
-vim.cmd("set number")
-vim.cmd("set relativenumber")
-vim.cmd("set scrolloff=5")
-vim.cmd("set ts=2")
-
+---- // Lazy \\ ----
 require("config.lazy")
-
+---- // Theme \\ ----
 require("catppuccin").setup()
+---- // Vim options \\ ----
 vim.o.background = "dark"
-vim.cmd.colorscheme "gruvbox"
+vim.cmd.colorscheme "tokyonight-moon"
 vim.opt.clipboard:append { "unnamed", "unnamedplus" }
+vim.opt.cursorline = true
+vim.opt.relativenumber = true
+vim.opt.shiftwidth = 2
+vim.opt.number = true
 
 local config = require("nvim-treesitter.configs")
 config.setup({
