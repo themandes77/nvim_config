@@ -3,14 +3,7 @@ require("config.lazy")
 ---- // Theme \\ ----
 require("catppuccin").setup()
 ---- // Vim options \\ ----
-vim.o.background = "dark"
-vim.cmd.colorscheme "tokyonight-moon"
-vim.opt.clipboard:append { "unnamed", "unnamedplus" }
-vim.opt.cursorline = true
-vim.opt.relativenumber = true
-vim.opt.shiftwidth = 2
-vim.opt.number = true
-
+require("config.options")
 local config = require("nvim-treesitter.configs")
 config.setup({
   ensure_installed = {
